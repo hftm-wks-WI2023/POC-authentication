@@ -2,10 +2,18 @@
 
 ## Initialisierung
 
+### From source
+
 ```
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+### Using Docker
+```
+docker build -t poc-authentication .
+docker run -p 8000:8000 poc-authentication
 ```
 
 ## POCS
