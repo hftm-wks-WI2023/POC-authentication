@@ -30,7 +30,8 @@ ALLOWED_HOSTS = []
 LOGIN_REDIRECT_URL = '/auth/me/'
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.SessionAuthentication',
+        # 'rest_framework.authentication.SessionAuthentication',
+        'config.custom_authentication.CustomSessionAuthentication'
     ]
 }
 
