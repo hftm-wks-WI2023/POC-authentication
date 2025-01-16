@@ -5,9 +5,9 @@ RUN apk update && apk upgrade --no-cache
 WORKDIR /opt/app
 COPY . /opt/app/
 RUN pip install --no-cache-dir -r requirements.txt
-RUN addgroup -S appgroup && adduser -S appuser -G appgroup
-
-USER appuser
+# RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+#
+# USER appuser
 
 WORKDIR /opt/app/session
 
